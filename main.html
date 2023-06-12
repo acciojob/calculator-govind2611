@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    
+   
+    <div class="container">
+        <div id="display"></div>
+        <div class="buttons">
+            <div class="btn" id="C" onclick="clearxyz()">C</div>
+            <div class="btn" id="divi" onclick="clickingxyz('/')">/</div>
+            <div class="btn" id="*" onclick="clickingxyz('*')">*</div>
+            <div class="btn" id="back" onclick="backxyz()">&larr;</div>
 
+            <div class="btn" id="7" onclick="clickingxyz('7')">7</div>
+            <div class="btn" id="8" onclick="clickingxyz('8')">8</div>
+            <div class="btn" id="9" onclick="clickingxyz('9')">9</div>
+            <div class="btn" id="-" onclick="clickingxyz('-')">-</div>
+
+            <div class="btn" id="4" onclick="clickingxyz('4')">4</div>
+            <div class="btn" id="5" onclick="clickingxyz('5')">5</div>
+            <div class="btn" id="6" onclick="clickingxyz('6')">6</div>
+            <div class="btn" id="plus" onclick="clickingxyz('+')">+</div>
+
+            <div class="btn" id="1" onclick="clickingxyz('1')">1</div>
+            <div class="btn" id="2" onclick="clickingxyz('2')">2</div>
+            <div class="btn" id="3" onclick="clickingxyz('3')">3</div>
+            <div class="btn" id="." onclick="clickingxyz('.')">.</div>
+
+            <div class="btn" id="op" onclick="clickingxyz('(')">(</div>
+            <div class="btn" id="0" onclick="clickingxyz('0')">0</div>
+            <div class="btn" id="cl" onclick="clickingxyz(')')">)</div>
+            <div class="btn" id="equal" onclick="evalxyz()">=</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
